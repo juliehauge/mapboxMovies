@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies filmed in Oxford</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+    <div class="header">
+    <h1 class="overskrift">Movies filmed in Oxford</h1>
+    <div class="info">
+        <img src="./images/pie-chart.png" alt="">
+    </div>
+    
+    <div class="meny" onclick="createX(this)" >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    </div>
+  
+    <div class="content">
+    <nav id="filmer" class="dropdown-content" >
+        <article class="film" data-lng="-1.263295" data-lat="51.751757" data-bilde="https://www.britainexpress.com/images/attractions/editor3/Oxford-Castle-7889.jpg" data-text="Oxford Castle" data-klasse="videoplayer">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>102 Dalmatians</h2>
+            <p>Oxford Prison was used for the scene in the film where Cruella walked out of prison.</p>
+        </article>
+        <article class="film" data-lng="-1.254074" data-lat="51.754146" data-bilde="./images/bodleianlibrary.jpg" data-text="Bodleian Library">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>Harry Potter and the Sorcerer's Stone</h2>
+            <p>Oxford University's Divinity School served as the Hogwarts Hospital Wing, and Duke Humfrey's Library, part of the Bodleian Library, was used as the Hogwarts Library. Christ Church, Oxford was the location for the Hogwarts trophy room.</p>
+            
+        </article>
+        <article class="film" data-lng="-1.254756" data-lat="51.750112" data-bilde="https://upload.wikimedia.org/wikipedia/commons/1/14/Christ_Church_Cathedral%2C_Oxford.jpg" data-text="Christ Church">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>The Golden Compass</h2>
+            <p>Filming took place in Radcliffe Square, Christ Church and Exeter College.</p>
+        
+        </article>
+        <article class="film" data-lng="-1.253738" data-lat="51.754480" data-bilde="https://fineartamerica.com/images/artworkimages/medium/1/bridge-of-sighs-oxford-andrew-michael.jpg" data-text="Bridge of Sighs">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>X-Men: First Class</h2>
+            <p>Principal photography began on August 31, 2010, in Oxford, England, which included St Aldate's street and some of the University of Oxford's buildings, and lasted for two days. An X-men prequel showing Xavier's time at Oxford, Charles drinks at a fake pub by the Bridge of Sighs.
+            </p>
+       
+        </article>
+        <article class="film" data-lng="-1.253230" data-lat="51.751846" data-bilde= "./images/magpielane.jpg" data-text="Magpie Lane">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>The Riot Club</h2>
+            <p>The film is set among the Riot Club, a fictional all-male, exclusive dining club at the University of Oxford. The shooting of the film began on 30 June 2013 in Oxford, England. The crew were spotted during the filming of scenes at Magpie Lane.</p>
+        </article>
+        <article class="film" data-lng="-1.256133" data-lat="51.753735" data-bilde="https://www.nex-architecture.com/wp-content/uploads/2019/06/DSC5944LR.jpg" data-text="Exeter College">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>Doctor Strange</h2>
+            <p>In January 2016, filming took place at Exeter College, Oxford.</p>
+
+        </article>
+        <article class="film" data-lng="-1.254263" data-lat="51.753576" data-bilde="./images/radcliffesquare.jpg" data-text="Radcliffe Square">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>Transformers: The Last Knight</h2>
+            <p>Filming for Transformers: The Last Knight, which stars Mark Walberg and Anthony Hopkins, took place in Radcliffe Square.</p>
+           
+        </article>
+        <article class="film" id="mammamia" data-lng="-1.251627" data-lat="51.754942" data-bilde="https://upload.wikimedia.org/wikipedia/commons/3/3f/New_College_Oxford_chapel.jpg" data-text="New College">
+            <img class="filmIcon" src="./images/cinema.png" alt="">
+            <h2>Mamma Mia! Here We Go Again</h2>
+            <p>In 1979, a young Donna graduates from New College, Oxford with Rosie and Tanya, and prepares to travel the world.</p>
+         
+        </article>
+    </nav>
+
+
+    <div id="map" class="map-one"></div>
+    <div id="container"></div>
+    </div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="./active.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>

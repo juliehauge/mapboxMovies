@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgba(174, 219, 212, 0.849);
+}
+
+.header {
+    height: 6vh;
+    width: 100vw;
+}
+
+.content {
+    height: 92vh;
+    width: 100vw;
+}
+
+.overskrift {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    pointer-events: none;
+    font-size: 20px;
+}
+
+.info img {
+    width: 3%;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+#container {
+    z-index: 2;
+    width: 40vw;
+    height: 25vw;
+    position: absolute;
+    top: 4rem;
+    right: 1.5rem;
+    display: none;
+}
+
+#container:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+
+.meny {
+    z-index: 2;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+}
+
+#map {
+    z-index: 1;
+    height: 92vh;
+    width: 100vw;
+}
+
+nav {
+    z-index: 2;
+    background-color: rgba(174, 219, 212, 0.671);
+    border-radius: 5px;
+    height: 90vh;
+    width: 20vw;
+    overflow: auto;
+}
+
+nav article {
+    border-bottom: 0.5px solid black;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+}
+
+#mammamia {
+    border: none;
+}
+
+
+nav article.active, nav article:hover {
+    background-color: rgb(174, 219, 212);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    pointer-events: none;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    pointer-events: none;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.filmIcon {
+    width: 10%;
+   position: relative;
+    display: grid;
+    margin: auto;
+   display: none;
+}
+
+.mapboxgl-popup img {
+    width: 100%;
+}
+
+/* Hvis ekstra bilde i popup---> */
+/* .mapboxgl-popup img {
+    width: 100%;
+}
+
+img.videoplayer {
+    width: 20%;
+} */
+
+path, .container {
+    cursor: pointer;
+}
+
+.mapboxgl-popup-close-button {
+    font-weight: 800;
+    font-size: 18px;
+}
+div.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color:rgba(174, 219, 212, 0.678);
+}
+
+div.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+    -webkit-align-self: center;
+    align-self: center;
+    border-top: none;
+    border-bottom-color: rgba(174, 219, 212, 0.678);
+}
+
+
+div.mapboxgl-popup-content {
+    background-color: rgba(174, 219, 212, 0.678);
+    padding: 18px 10px 1px;
+    text-align: center;
+}
+
+div.mapboxgl-popup-content p {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}

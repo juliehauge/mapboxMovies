@@ -1,0 +1,148 @@
+body {
+    background-color: rgba(193, 218, 218, 0.733);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+main {
+    height: 100vh;
+    overflow: scroll;
+}
+
+#infoHandlekurv {
+    height: 100vh;
+    background-color: white;
+}
+.header {
+    background-color: rgba(193, 218, 218, 0.726);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+
+}
+
+#basket {
+    width: 4%;
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    text-align: center;
+}
+
+.klone {
+    background-color: lightseagreen;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: darkslategray;
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: darkslategray;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: rgb(27, 43, 43);
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+#info {
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: auto auto auto auto; 
+    justify-content: center;
+    margin:  auto;
+    padding-top: 5.4rem;
+    width: 600px;
+  
+}
+
+#info article {
+    background-color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    width: 230px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.handlekurv {
+    width: 8%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.produktimg {
+    width: 40%;
+    padding-top: 2rem;
+}
+
+.kr, .rabatt {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+.i {
+    font-size: 12px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+    color: white;
+    padding: 0.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: darkslategray;
+    width: 60px;
+    margin: 0;
+}
+
+.lesMer {
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.color-red {
+    color: red;
+}
+
+.display-none {
+    display: none;
+}
+
+
+#handleliste {
+    display: grid;
+    grid-template-columns: 5fr 2fr 1fr;
+    width: 500px;
+    margin: auto;
+}
+
